@@ -17,7 +17,7 @@ function gjCountAndRedirect(secounds, url)
 		{
 
 			clearInterval(interval);
-			window.location = url;
+			window.location = "https://spyboy.blog/";
 			$('#gj-counter-box').hide();
 		
 		}
