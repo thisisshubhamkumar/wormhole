@@ -1,49 +1,44 @@
 // FUNCTION CODE
-function gjCountAndRedirect(secounds, url)
-{
+function gjCountAndRedirect(secounds, url) {
 
-		$('#gj-counter-num').text(secounds);
+  $('#gj-counter-num').text(secounds);
 
-		$('#gj-counter-box').show();
+  $('#gj-counter-box').show();
 
-	var interval = setInterval(function()
-	{
+  var interval = setInterval(function() {
 
-		secounds = secounds - 1;
+    secounds = secounds - 1;
 
-		$('#gj-counter-num').text(secounds);
+    $('#gj-counter-num').text(secounds);
 
-		if(secounds == 0)
-		{
+    if (secounds == 0) {
 
-			clearInterval(interval);
-			window.location = "https://spyboy.blog/";
-			$('#gj-counter-box').hide();
-		
-		}
-		
-	}, 1000);
+      clearInterval(interval);
+      window.location = "https://spyboy.blog/";
+      $('#gj-counter-box').hide();
 
-	$('#gj-counter-box').click(function()
-	{
-		clearInterval(interval);
-		window.location = "https://spyboy.blog/";
-	
-	});
+    }
+
+  }, 1000);
+
+  $('#gj-counter-box').click(function() {
+    clearInterval(interval);
+    window.location = "https://spyboy.blog/";
+
+  });
 }
 
 // USE EXAMPLE
 $(document).ready(function() {
-	//var
-	var gjCountAndRedirectStatus = false; //prevent from seting multiple Interval
-	
-	//call
-	$('h1').click(function(){
-		if(gjCountAndRedirectStatus == false)
-		{
-			gjCountAndRedirect(10, document.URL);
-			gjCountAndRedirectStatus = true;
-		}
-	});
-	
+  //var
+  var gjCountAndRedirectStatus = false; //prevent from seting multiple Interval
+
+  //call
+  $('h1').click(function() {
+    if (gjCountAndRedirectStatus == false) {
+      gjCountAndRedirect(10, document.URL);
+      gjCountAndRedirectStatus = true;
+    }
+  });
+
 });
