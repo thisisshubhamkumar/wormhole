@@ -7,4 +7,4 @@ redirect to another page in jquery after 10 seconds
 
 `Choose:` https://thisisshubhamkumar.github.io/wormhole/manual.html
 
-`Direct:` https://thisisshubhamkumar.github.io/wormhole/imain.html
+`Direct:` https://thisisshubhamkumar.github.io/wormhole/iamin.html
